@@ -25,13 +25,7 @@ import Ad from "../../../../assets/ad.png";
 import Cross from "../../../../assets/cross.png";
 import AWS from "aws-sdk";
 
-const awsConfig = {
-  accessKeyId: process.env.ACCESS_KEY_ID,
-  secretAccessKey: process.env.SECRET_ACCESS_KEY,
-  region: process.env.REGION,
-}
 
-AWS.config.update(awsConfig);
 
 const s3 = new AWS.S3();
 
